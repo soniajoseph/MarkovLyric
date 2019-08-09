@@ -1,0 +1,21 @@
+<html>
+    <head>
+    	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+
+      <h1> Song lyric generator </h1>
+    </head>
+    <body>
+        <hr>
+        {% block content %}
+        {% endblock %}
+
+		<form action="/lyrics" method="POST">
+		  <br>
+		  Artist: <br>
+		  <input type="text" name="artist"><br>
+		  <br>
+		  <input type="submit" value="Submit">
+		</form>
+
+    </body>
+</html>

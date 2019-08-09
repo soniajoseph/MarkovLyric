@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<span id="typed"></span>
+
+<!-- <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
+ -->
+    <script>
+
+  // concatenate string with breaks
+	var lyrics = {{ lyrics|tojson }};
+	var lyrics_with_breaks = "";
+	for (line in lyrics) {
+		lyrics_with_breaks = lyrics_with_breaks.concat(lyrics[line] + "<br>");
+	}
+
+	var typed = new Typed('#typed', {
+    	strings: [lyrics_with_breaks],
+    	typeSpeed: 18,
+  });
+
+   	</script> 
+
+{% endblock %} 
