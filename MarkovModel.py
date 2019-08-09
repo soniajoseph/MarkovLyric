@@ -31,8 +31,11 @@ class MarkovModel:
 	# generate text character by character
 	def textGenerator(self, text, k, characters):
 		kgrams = self.markovModel(text, k)
-		starting_kgram = text[0:k]
-		lyrics = []
+		rand_idx = random.randint(0,len(text)-k-1)
+		starting_kgram = text[rand_idx:rand_idx+k]
+		lyrics = [starting_kgram]
+
+		print(lyrics[0])
 		for i in range(0, characters, 1):
 			# print character
 			char = self.nextCharacter(kgrams, starting_kgram)
@@ -41,6 +44,7 @@ class MarkovModel:
 			# update kgram
 			starting_kgram = starting_kgram[1:] # remove first character
 			starting_kgram = "".join([starting_kgram,char])# add new character
+
 		return lyrics
 
 	# generate string of lyrics
@@ -59,4 +63,5 @@ if __name__ == "__main__":
 	# print(model.stringLyrics())
 
 	# textGenerator(text, int(sys.argv[2]), int(sys.argv[3]))
+
 	print()

@@ -7,7 +7,9 @@
     "start": "node index.js"
   },
   "dependencies": {
+    "bootstrap": "^3.4.1",
     "express": "^4.13.3",
+    "react-reveal-text": "^0.1.1",
     "typed.js": "^2.0.10"
   },
   "engines": {
