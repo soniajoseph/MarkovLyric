@@ -13,7 +13,7 @@ def index():
 def lyrics():
 
 	# Uncomment for RapGenius API
-	get artist
+	# get artist
 	artist = request.form['artist']
 	genius = lyricsgenius.Genius("Y_izF-J78Qf8qn1gqLTWyKj95b_sJuQwj7f4smPQq7zB1qnMp3mJ71jpB2tBu0Bb")
 	artist = genius.search_artist(artist, max_songs=2, sort="title")
