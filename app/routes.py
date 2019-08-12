@@ -37,7 +37,7 @@ def lyrics():
 		total_lyrics = request.form['artist']
 
 		model = MarkovModel()
-		lyrics = model.textGenerator(total_lyrics, 5, 400)
+		lyrics = model.textGenerator(total_lyrics, 5, 4000)
 		lyrics = model.stringLyrics(lyrics)
 
 		# add line breaks

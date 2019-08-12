@@ -2,23 +2,9 @@
 
 {% block content %}
 
+ <div class = "row col-sm-12">
 <span id="typed"></span>
-
-
-<style>
-#typed {
-  color: tomato;
-  fontSize: 24px;
-  lineHeight: 36px;
-  textAlign: center;
-  fontFamily: sans-serif;
-  letterSpacing: 1.2em;
-  paddingLeft: 1.2em;
-}
-
-
-</style>
-
+</div>
 
 
 <script>
@@ -32,7 +18,7 @@
 
     var typed = new Typed('#typed', {
       strings: [lyrics_with_breaks],
-      typeSpeed: 10,
+      typeSpeed: -10000,
       smartBackspace: true,
       cursorChar: "",
   });
