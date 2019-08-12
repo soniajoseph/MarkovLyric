@@ -44,13 +44,13 @@
 
 
   <body>
-    <div class="container">
+    <div class="container" style="height:100%;">
 
 <!-- NAVIGATION BAR -->
     	<div class="container">
-	      	<div class="header clearfix">
+	      	<div class="header clearfix" style="height:30%;">
 				<nav class="navbar navbar-expand-md navbar-light">
-				    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2 row">
+				    <div class="w-100 order-1 order-md-0 dual-collapse2 row">
 				        <ul class="navbar-nav mr-auto">
 						<h3> generate text </h3>
 				        </ul>
@@ -71,8 +71,9 @@
 
 
 <!-- CONTENT -->
-		<div class = "container h-100" style="overflow:hidden">
-			<div class = "container row content-wrapper w-100">
+		<div class = "container" style="overflow:hidden; height:70%;">
+			<div class = "row"> </div>
+			<div class = "container row content-wrapper w-100" style="height:60%;">
 				<br>
 		      	{% block content %}
 		        {% endblock %}
@@ -101,11 +102,14 @@
 
 <style>
 
+html, body {
+	height: 100%;
+}
+
 
 .content-wrapper {
 	position: fixed;
 /*    width: 80%; */
-	height: 435px;
     overflow-y: auto;
 }
 
