@@ -6,6 +6,9 @@ app.debug = True
 
 bootstrap = Bootstrap(app)
 
+if __name__ == '__main__':
+    app.run()
+
 from app import routes
 
 
