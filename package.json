@@ -1,5 +1,5 @@
 {
-  "name": "generate text",
+  "name": "generate-text",
   "version": "0.2.0",
   "description": "a markov model-based text generator",
   "main": "index.js",
@@ -12,12 +12,9 @@
     "react-reveal-text": "^0.1.1",
     "typed.js": "^2.0.10"
   },
-  "engines": {
-    "node": "6.11.0"
-  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/heroku/node-js-sample"
+    "url": "https://github.com/soniajoseph/generate-text"
   },
   "keywords": [
     "node",
@@ -30,3 +27,4 @@
   ],
   "license": "MIT"
 }
+
