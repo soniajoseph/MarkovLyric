@@ -73,26 +73,28 @@
 <!-- CONTENT -->
 		<div class = "container" style="overflow:hidden; height:70%;">
 			<div class = "row"> </div>
-			<div class = "container row content-wrapper w-100" style="height:60%;">
-				<br>
-		      	{% block content %}
-		        {% endblock %}
-		    </div>
+				<div class = "container row content-wrapper py-4 pr-4" style="height:60%;">
+					<br>
+			      	{% block content %}
+			        {% endblock %}
+			    </div>
 
 
-		    <div class = "container row fixed-row-bottom form h-20">
-		      	{% block form %}
-		        {% endblock %}
-		    </div>
+			    <div class = "container row fixed-row-bottom form bg-white">
+			    	<br>
+			      	{% block form %}
+			        {% endblock %}
+			    </div>
 
-		    <div class = "container row footer text-muted">
-		    	<a>&copy; sonia joseph
-		    	<br> <br>
-		    </a>
+			    <div class = "container row footer text-muted bg-transparent">
+			    	<a>&copy; sonia joseph
+			    	<br> <br>
+			    </a>
+				</div>
+
 			</div>
-		</div>
 
-	</div>
+		</div>
 
        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
@@ -108,19 +110,18 @@ html, body {
 
 
 .content-wrapper {
-	position: fixed;
-/*    width: 80%; */
+	position: absolute;
     overflow-y: auto;
 }
 
 
 .fixed-row-bottom { 
-	position: fixed; 
+	position: absolute; 
 	bottom: 60px;
 }
 
 .footer { 
-	position: fixed;
+	position: absolute;
 	bottom: 0px;
 }
 
