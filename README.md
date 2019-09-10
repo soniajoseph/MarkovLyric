@@ -3,7 +3,7 @@
 
 Based off an [old college assignment](https://www.cs.princeton.edu/courses/archive/fall15/cos126/assignments/markov.html), this project uses basic natural language processing to generate semi-plausible text.
 
-{% include figure image_path="/assets/images/posts/bostrom.png" alt="text generation with Markov chains for Bostrom's <i> Superintelligence </i>" caption="Text generation for Nick Bostrom's <i> Superintelligence </i>." %}
+{% include figure image_path="bostrom.png" alt="text generation with Markov chains for Bostrom's <i> Superintelligence </i>" caption="Text generation for Nick Bostrom's <i> Superintelligence </i>." %}
 
 
 ## Markov Chains
@@ -23,5 +23,5 @@ Try it out for yourself with [text](https://generatetext.herokuapp.com/) or [lyr
 
 I coded the Markov chain in Python and hosted it on Heroku with the Flask micro web framework. I wrote a CSS/HTML/JavaScript GUI to mimic the effect of the Terminal when originally testing the algorithm. For the animation I used the [Typed.js library](https://github.com/mattboldt/typed.js/).
 
-Because the output was especially amusing for song lyrics, I also connected it to the [RapGenius API](https://genius.com/developers). The GitHub repos for the lyric generator is [here](https://github.com/soniajoseph/MarkovLyric).
+Because the output was especially amusing for song lyrics, I also connected it to the [RapGenius API](https://genius.com/developers). The GitHub repo for the lyric generator is [here](https://github.com/soniajoseph/MarkovLyric).
 
