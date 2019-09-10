@@ -3,7 +3,7 @@
 
 Based off an [old college assignment](https://www.cs.princeton.edu/courses/archive/fall15/cos126/assignments/markov.html), this project uses basic natural language processing to generate semi-plausible text.
 
-{% include figure image_path="bostrom.png" alt="text generation with Markov chains for Bostrom's <i> Superintelligence </i>" caption="Text generation for Nick Bostrom's <i> Superintelligence </i>." %}
+!(Text generation for Nick Bostrom's <i>Superintelligence</i>)[bostrom.png]
 
 
 ## Markov Chains
