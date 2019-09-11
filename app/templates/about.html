@@ -2,34 +2,33 @@
 
 {% block content %}
 
-<h1> About </h1>
-
-<h2> How to use </h2>
+<h2> About </h2>
+<br>
+<h3> How to use </h3>
 
 This project uses basic natural language processing to generate semi-plausible text. Copy and paste any input text, and the algorithm will use a Markov model to generate psuedo-random output based on the input.
-
-Below is the pseudo-random output for Nick Bostrom's <i> Superintelligence</i>:
-
-<img src = "bostrom.png" alt="output for Bostrom's Superintelligence">
-
-<h2> How it works </h2>
-
+<br>
+Below is the pseudo-random output for Nick Bostrom's <i>Superintelligence</i>:
+<br>
+<img src = "../../bostrom.png" alt="Output for Bostrom's Superintelligence.">
+<br>
+<h3> How it works </h3>
+<br>
 The algorithm divides the input text into k-grams, and for each k-gram, forms a frequency table for the following character.
-
+<br>
 When generating text, the algorithm looks at the current k-gram and selects a random character based off the weighted distribution of the frequency table.
-
+<br>
 The algorithm incorporates the character into the next k-gram and repeats the process.
-
+<br>
 Called a Markov chain, the algorithm produces long strings of semi-believable text.
-
-Find the GitHub for the code <a href = "https://github.com/soniajoseph/MarkovLyric">here</a>.
-
-<h2> Project Design </h2>
-
+<br>
+<i>Find the GitHub for the code <a href = "https://github.com/soniajoseph/MarkovLyric">here</a>. </i>
+<br>
+<h3> Project Design </h3>
+<br>
 I coded the Markov chain in Python and hosted it on Heroku with the Flask micro web framework. I wrote a CSS/HTML/JavaScript GUI to mimic the effect of the Terminal when originally testing the algorithm. For the animation I used the <a href = "https://github.com/mattboldt/typed.js/">Typed.js library</a>.
-
+<br>
 Because the output was especially amusing for song lyrics, I connected another version to the [RapGenius API](https://genius.com/developers), which you can find <a href="https://generatelyrics.herokuapp.com/">here</a>.
-
+<br>
 For more projects, go <a href="soniajoseph.github.io/projects">here</a>.
-
 {% endblock %}
