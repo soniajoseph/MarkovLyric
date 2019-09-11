@@ -74,39 +74,37 @@
 <!-- CONTENT -->
 		<div class = "container" style="overflow:hidden; height:70%;">
 			<div class = "row"> </div>
-				<div class = "container row content-wrapper py-4" style="height:60%;"> <font face="arial">
+				<div class = "container row content-wrapper py-4" style="height:60%;"> <font face="verdana">
 
 <h2> About </h2>
 <br>
-<p>This project uses basic natural language processing to generate semi-plausible text. Copy and paste any input text, and the algorithm will use a Markov model to generate psuedo-random output based on the input.</p>
+This project uses basic natural language processing to generate semi-plausible text. Copy and paste any input text, and the algorithm will use a Markov model to generate psuedo-random output based on the input.
 <br>
-<p>Below is the pseudo-random output for Nick Bostrom's <i>Superintelligence</i>:</p>
+Below is the pseudo-random output for Nick Bostrom's <i>Superintelligence</i>:
 <br>
-<p><img src = "../assets/bostrom.png" alt="Output for Bostrom's Superintelligence."></p>
-<br>
+<img src = "{{url_for('assets', filename='bostrom.png')}}" alt="Output for Bostrom's Superintelligence.">
 <br>
 
 <h3> How it works </h3>
 <br>
-<p>The algorithm divides the input text into k-grams, and for each k-gram, forms a frequency table for the following character.</p>
+The algorithm divides the input text into k-grams, and for each k-gram, forms a frequency table for the following character.
 <br>
-<p>When generating text, the algorithm looks at the current k-gram and selects a random character based off the weighted distribution of the frequency table.</p>
+When generating text, the algorithm looks at the current k-gram and selects a random character based off the weighted distribution of the frequency table.
 <br>
-<p>The algorithm incorporates the character into the next k-gram and repeats the process.</p>
+The algorithm incorporates the character into the next k-gram and repeats the process.
 <br>
-<p>Called a Markov chain, the algorithm produces long strings of semi-believable text.</p>
+Called a Markov chain, the algorithm produces long strings of semi-believable text.
 <br>
-<p><i>Find the GitHub for the code <a href = "https://github.com/soniajoseph/MarkovLyric">here</a>. </i></p>
-<br>
+<i>Find the GitHub for the code <a href = "https://github.com/soniajoseph/MarkovLyric">here</a>. </i>
 <br>
 
 <h3> Project Design </h3>
 <br>
-<p>I coded the Markov chain in Python and hosted it on Heroku with the Flask micro web framework. I wrote a CSS/HTML/JavaScript GUI to mimic the effect of the Terminal when originally testing the algorithm. For the animation I used the <a href = "https://github.com/mattboldt/typed.js/">Typed.js library</a>.</p>
+I coded the Markov chain in Python and hosted it on Heroku with the Flask micro web framework. I wrote a CSS/HTML/JavaScript GUI to mimic the effect of the Terminal when originally testing the algorithm. For the animation I used the <a href = "https://github.com/mattboldt/typed.js/">Typed.js library</a>.
 <br>
-<p>Because the output was especially amusing for song lyrics, I connected another version to the RapGenius API, which you can find <a href="https://generatelyrics.herokuapp.com/">here</a>.</p>
+Because the output was especially amusing for song lyrics, I connected another version to the RapGenius API, which you can find <a href="https://generatelyrics.herokuapp.com/">here</a>.
 <br>
-<p>For more projects, go <a href="soniajoseph.github.io/projects">here</a>.</p> </font>
+For more projects, go <a href="soniajoseph.github.io/projects">here</a>. </font>
 
 			    </div>
 
@@ -131,11 +129,7 @@ html, body {
 	height: 100%;
 }
 .content-wrapper {
-	position: absolute;
-}
-.fixed-row-bottom { 
-	position: absolute; 
-	bottom: 40px;
+	position: relative;
 }
 .footer { 
 	position: absolute;
