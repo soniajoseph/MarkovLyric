@@ -1,12 +1,6 @@
-{% extends "base.html" %}
-
-{% block content %}
-
 <h2> About </h2>
 <br>
 This project uses basic natural language processing to generate semi-plausible text. Copy and paste any input text, and the algorithm will use a Markov model to generate psuedo-random output based on the input.
-<br>
-Below is the pseudo-random output for Nick Bostrom's <i>Superintelligence</i>:
 <br>
 
 <h3> How it works </h3>
@@ -29,5 +23,3 @@ I coded the Markov chain in Python and hosted it on Heroku with the Flask micro 
 Because the output was especially amusing for song lyrics, I connected another version to the RapGenius API, which you can find <a href="https://generatelyrics.herokuapp.com/">here</a>.
 <br>
 For more projects, go <a href="soniajoseph.github.io/projects">here</a>. 
-
-{% endblock %}
